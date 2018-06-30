@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # seahyx.github.io
 
 Hello, welcome to Seah Ying Xiang's website. Please enjoy your time here. Thank you.
@@ -40,4 +39,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-<<<<<<< HEAD
