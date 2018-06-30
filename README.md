@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # seahyx.github.io
 
 Hello, welcome to Seah Ying Xiang's website. Please enjoy your time here. Thank you.
 =======
+=======
+>>>>>>> e1d69489192dfd9fe871920e4469ed0799a77517
 =======
 >>>>>>> e1d69489192dfd9fe871920e4469ed0799a77517
 ## Welcome to GitHub Pages
@@ -44,6 +47,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e1d69489192dfd9fe871920e4469ed0799a77517
+=======
 >>>>>>> e1d69489192dfd9fe871920e4469ed0799a77517
 =======
 >>>>>>> e1d69489192dfd9fe871920e4469ed0799a77517
