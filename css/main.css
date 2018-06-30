@@ -1,6 +1,7 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0px auto;
+    width: 95%;
+    background-color: black;
 }
 nav ul, footer ul {
     font-family:'Orbitron', 'Helvetica', 'Arial', 'Sans-Serif';
@@ -14,12 +15,14 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: white;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
+    color: #999;
     font-size: 3em;
     font-family:'Orbitron', 'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -29,8 +32,9 @@ p {
     color: #333;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    position: absolute;
+    bottom: 0;
 }
 
 ul.posts { 
