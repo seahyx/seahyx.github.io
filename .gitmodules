@@ -1,0 +1,3 @@
+[submodule "floating-menu"]
+	path = floating-menu
+	url = https://github.com/seahyx/floating-menu.git
