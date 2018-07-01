@@ -1,7 +1,11 @@
 body {
     margin: 0px auto;
-    width: 95%;
+    width: 100%;
     background-color: black;
+}
+.content {
+    margin: 0px auto;
+    width: 95%;
 }
 nav ul, footer ul {
     font-family:'Orbitron', 'Helvetica', 'Arial', 'Sans-Serif';
@@ -28,6 +32,10 @@ p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
+}
+nav {
+    position: absolute;
+    top: 0;
 }
 footer {
     font-size: 0.8em;
