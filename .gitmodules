@@ -1,0 +1,4 @@
+[submodule "floating-window"]
+	path = floating-window
+	url = https://github.com/seahyx/floating-menu.git
+	branch = master
