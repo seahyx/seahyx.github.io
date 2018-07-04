@@ -1,3 +1,3 @@
 cd "D:\Users\seahy\Documents\GitHub\seahyx.github.io\"
-@RD /S /Q "floating-menu"
-git clone https://github.com/seahyx/floating-menu.git floating-menu
+git submodule add https://github.com/seahyx/floating-menu floating-menu
+git submodule update --init --recursive
