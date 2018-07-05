@@ -1,0 +1,3 @@
+[submodule "f-menu"]
+	path = f-menu
+	url = https://github.com/seahyx/floating-menu
