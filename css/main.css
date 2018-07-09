@@ -35,11 +35,13 @@ p {
 }
 nav {
     position: absolute;
+    z-index: 1;
     top: 0;
 }
 footer {
     font-size: 0.8em;
     position: absolute;
+    z-index: 1;
     bottom: 0;
 }
 
