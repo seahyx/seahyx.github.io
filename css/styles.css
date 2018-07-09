@@ -53,3 +53,7 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+canvas {
+    position: absolute;
+}
