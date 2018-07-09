@@ -1,6 +1,4 @@
-Hello friend, welcome to my github page repository.
-=
-
+# Hello friend, welcome to my github page repository.
 ###### _A picture is worth a thousand words, a website is worth a thousand bucks._
 \
 \
