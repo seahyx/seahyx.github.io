@@ -99,6 +99,10 @@ function parallaxOffset(factor_x, factor_y) {
 	//Get mouse position
 	let mouse_pos = app.renderer.plugins.interaction.mouse.global;
 
+	//Account for anomalous values when mouse positions is undefined
+	if (Math.abs(mouse_pos.x) > app.renderer * 5) {mouse_pos.x = 0;}
+	if (Math.abs(mouse_pos.y) > app.renderer * 5) {mouse_pos.y = 0;}
+
 	//Calculate x offset
 	let x_result = -(mouse_pos.x - (app.renderer.width / 2)) * factor_x;
 
