@@ -1,41 +1,10 @@
-# seahyx.github.io
+Hello friend, welcome to my github page repository.
+=
 
-Hello, welcome to Seah Ying Xiang's website. Please enjoy your time here. Thank you.
-=======
-## Welcome to GitHub Pages
+_A picture is worth a thousand words, a website is worth a thousand bucks._ Owo, what's this? A [website](https://seahyx.github.io/)?
 
-You can use the [editor on GitHub](https://github.com/seahyx/seahyx.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Yeah.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It's the host of all those weird 'n random stuff I make. Fun stuff. You should go check it out, it's pretty good. Good ole' *HTML 5*, *CSS 3.0*, *JavaScript* 'n all.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/seahyx/seahyx.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+https://seahyx.github.io/.
