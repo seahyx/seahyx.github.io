@@ -1,7 +1,11 @@
 Hello friend, welcome to my github page repository.
 =
 
-_A picture is worth a thousand words, a website is worth a thousand bucks._ Owo, what's this? A [website](https://seahyx.github.io/)?
+_A picture is worth a thousand words, a website is worth a thousand bucks._
+
+Owo, what's this?
+
+A [website](https://seahyx.github.io/)?
 
 Yeah.
 
