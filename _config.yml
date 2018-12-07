@@ -1,3 +1,7 @@
 theme: jekyll-theme-midnight
+title: seahyx.github.io | Amalgam of code and other shit
+description: Anything goes in here. Weird programming crap to cool stuff of the century, and even things completely unrelated to anything. It's all here.
+url: https://seahyx.github.io
+google_site_verification: rcn0W-VkKUx63rQ2laiQ8rV2nbHcoeB8z0htPVaTmR4
 plugins:
   - jekyll-seo-tag
