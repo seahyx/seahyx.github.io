@@ -12,4 +12,4 @@ Yeah.
 
 It's the host of all those weird 'n random stuff I make. Fun stuff. You should go check it out, it's pretty cool. Good ole' *HTML 5*, *CSS 3.0*, *JavaScript* 'n all.
 
-https://seahyx.github.io/.
+https://seahyx.github.io/

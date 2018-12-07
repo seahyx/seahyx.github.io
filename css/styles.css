@@ -1,59 +1,77 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
-    margin: 0px auto;
-    width: 100%;
-    background-color: black;
+	margin: 0px auto;
+	width: 100%;
+	background-color: black;
+	font-family: "Orbitron", "Arial", "Sans-Serif";
 }
 .content {
-    margin: 0px auto;
-    width: 95%;
+}
+
+
+nav, footer {
+	z-index: 10;
+	width: 100%;
+}
+/* Top navigation bar */
+nav {
+	position: sticky;
+	top: 0;
+}
+/* Bottom navigation bar */
+footer {
+	position: fixed;
+	font-size: 0.8em;
+	bottom: 0;
 }
 nav ul, footer ul {
-    font-family:'Orbitron', 'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
+	list-style: none;
+	padding: 20px;
+	margin: 0px;
 }
 nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+	display: inline-block;
+	margin: 0px 10px;
+}
+ul.posts { 
+	margin: 20px auto 40px; 
+	font-size: 1.5em;
+}
+ul.posts li {
+	list-style: none;
 }
 a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 a:hover {
-    text-decoration: underline;
+	font-weight: bold;
 }
+
+
+
 h1 {
-    color: #999;
-    font-size: 3em;
-    font-family: 'Orbitron', 'Helvetica', 'Arial', 'Sans-Serif';
+	color: #999;
+	font-size: 2em;
 }
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-nav {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-}
-footer {
-    font-size: 0.8em;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
+	color: #666;
+	font-size: 1em;
+	line-height: 1.5em;
+	font-family: "Raleway", "Arial", "Sans-Serif";
+	padding-bottom: 1.5em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
 
-ul.posts li {
-    list-style: none;
-}
 
 canvas {
-    position: absolute;
+	position: absolute;
+}
+
+.canvas {
+	position: absolute;
+	top: 0;
 }
