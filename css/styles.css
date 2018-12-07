@@ -26,6 +26,7 @@ footer {
 	position: fixed;
 	font-size: 0.8em;
 	bottom: 0;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 nav ul, footer ul {
 	list-style: none;
@@ -46,19 +47,22 @@ ul.posts li {
 a {
 	text-decoration: none;
 	color: white;
+	-webkit-transition: text-shadow 0.25s; /* Chrome and Safari legacy support */
+	-moz-transition: text-shadow 0.25s; /* Mozilla Firefox legacy support */
+	transition: text-shadow 0.25s;
 }
 a:hover {
-	font-weight: bold;
+	text-shadow: 0 0 5px #555, 0 0 6px #FFF, 0 0 7px #FFF, 0 0 8px #FFF;
 }
 
 
 
 h1 {
-	color: #999;
+	color: #bbb;
 	font-size: 2em;
 }
 p {
-	color: #666;
+	color: #999;
 	font-size: 1em;
 	line-height: 1.5em;
 	font-family: "Raleway", "Arial", "Sans-Serif";
