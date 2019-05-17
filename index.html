@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/home-style.css">
 	</head>
 	<body>
+		<div id="transition-element"></div>
 
 		<div class="content">
 			<nav>
@@ -37,6 +38,11 @@
 
 		</div>
 
-		<!-- Script -->
+		<!-- Scripts -->
+		<script type="text/javascript" src="instantclick.min.js" data-no-instant></script>
+		<script data-no-instant>
+			// data-no-instant - does not run script again when page reloads/changes
+			InstantClick.init();
+		</script>
 	</body>
 </html>
