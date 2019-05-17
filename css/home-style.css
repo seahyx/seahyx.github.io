@@ -1,0 +1,30 @@
+ul.main-scroll{
+	height: 6em;
+	width: auto;
+	overflow: hidden;
+	overflow-y: scroll;
+	list-style: none;
+	margin: 0px;
+	padding: calc(50vh - 3em) 40px calc(50vh - 3em) 40px
+}
+/* Hiding scroll bars */
+ul.main-scroll::-webkit-scrollbar { width: 0 !important }
+ul.main-scroll { overflow: -moz-scrollbars-none; }
+ul.main-scroll { -ms-overflow-style: none; }
+
+ul.main-scroll li {
+	display: block;
+}
+
+ul.main-scroll li a{
+	font-size: 3em;
+	color: #333;
+	text-decoration: none;
+	-webkit-transition: color 0.25s, font-size 0.25s; /* Chrome and Safari legacy support */
+	-moz-transition: color 0.25s, font-size 0.25s; /* Mozilla Firefox legacy support */
+	transition: color 0.25s, font-size 0.25s;
+}
+ul.main-scroll li a:hover{
+	font-size: 6em;
+	color: white;
+}

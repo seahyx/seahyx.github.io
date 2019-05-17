@@ -27,6 +27,7 @@ nav, footer {
 	z-index: 10;
 	width: 100%;
 }
+
 /* Top navigation bar */
 nav {
 	position: fixed;
@@ -61,43 +62,4 @@ nav ul li a, footer ul li a {
 }
 nav ul li a:hover, footer ul li a:hover {
 	text-shadow: 0 0 5px #555, 0 0 6px #FFF, 0 0 7px #FFF, 0 0 8px #FFF;
-}
-
-
-
-ul.posts { 
-	margin: 20px auto 40px; 
-	font-size: 1.5em;
-}
-ul.posts li {
-	list-style: none;
-}
-
-
-ul.main-scroll{
-	height: 30vh;
-	width: auto;
-	overflow: hidden;
-	overflow-y: scroll;
-	list-style: none;
-	margin: 0px;
-	padding: 35vh 40px 35vh 40px
-}
-/* Hiding scroll bars */
-ul.main-scroll::-webkit-scrollbar { width: 0 !important }
-ul.main-scroll { overflow: -moz-scrollbars-none; }
-ul.main-scroll { -ms-overflow-style: none; }
-ul.main-scroll li {
-	display: block;
-}
-ul.main-scroll li a{
-	font-size: 6em;
-	color: #333;
-	text-decoration: none;
-	-webkit-transition: color 0.25s; /* Chrome and Safari legacy support */
-	-moz-transition: color 0.25s; /* Mozilla Firefox legacy support */
-	transition: color 0.25s;
-}
-ul.main-scroll li a:hover{
-	color: white;
 }
