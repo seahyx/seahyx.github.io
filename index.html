@@ -5,40 +5,44 @@
 		<meta name="viewport" content="user-scalable=yes, initial-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
 		<meta name="google-site-verification" content="rcn0W-VkKUx63rQ2laiQ8rV2nbHcoeB8z0htPVaTmR4" />
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="./css/default-style.css">
-		<link rel="stylesheet" type="text/css" href="./css/home-style.css">
+		<link rel="stylesheet" type="text/css" href="css/default-style.css">
+		<link rel="stylesheet" type="text/css" href="css/home-style.css">
 	</head>
 	<body>
 		<div id="transition-element"></div>
 
-		<div class="content">
-			<nav>
-				<ul>
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="./about.html">About</a></li>
-				</ul>
-			</nav>
-
-			<ul class="main-scroll">
-				<li><a href="../tetris/index.html">tetris</a></li>
-				<li><a href="../star-field/index.html">star-field</a></li>
-				<li><a href="../star-field/index.html">star-field</a></li>
-				<li><a href="../star-field/index.html">star-field</a></li>
-				<li><a href="../star-field/index.html">star-field</a></li>
-				<li><a href="../star-field/index.html">star-field</a></li>
-				<li><a href="../star-field/index.html">star-field</a></li>
+		<header>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
 			</ul>
+		</header>
+		
+		<div id="content">
 
-			<footer>
-				<ul>
-					<li><a href="mailto:seahyx@gmail.com">email</a></li>
-					<li><a href="https://github.com/seahyx">github.com/seahyx</a></li>
-				</ul>
-			</footer>
+			<h1 id="title">My Projects:</h1>
 
+			<ul id="main-scroll">
+				<li><a href="../tetris/index.html" class="def selected-transition">tetris</a></li>
+				<li><a href="../star-field/index.html" class="def">star-field</a></li>
+				<li><a href="../star-field/index.html" class="def">star-field</a></li>
+				<li><a href="../star-field/index.html" class="def">star-field</a></li>
+				<li><a href="../star-field/index.html" class="def">star-field</a></li>
+				<li><a href="../star-field/index.html" class="def">star-field</a></li>
+				<li><a href="../star-field/index.html" class="def">star-field</a></li>
+			</ul>
+			
 		</div>
 
+		<footer>
+			<ul>
+				<li><a href="mailto:seahyx@gmail.com">email</a></li>
+				<li><a href="https://github.com/seahyx">github.com/seahyx</a></li>
+			</ul>
+		</footer>
+
 		<!-- Scripts -->
+		<script type="text/javascript" src="scroll-controller.js"></script>
 		<script type="text/javascript" src="instantclick.min.js" data-no-instant></script>
 		<script data-no-instant>
 			// data-no-instant - does not run script again when page reloads/changes

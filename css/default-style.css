@@ -8,12 +8,13 @@ body {
 	background-color: black;
 	color: white;
 	font-family: "Orbitron", "Arial", "Sans-Serif";
+	scroll-behavior: smooth;
 }
 
 
 h1 {
 	color: #bbb;
-	font-size: 2em;
+	font-size: 3em;
 }
 p {
 	color: #999;
@@ -23,13 +24,13 @@ p {
 	padding-bottom: 1.5em;
 }
 
-nav, footer {
+header, footer {
 	z-index: 10;
 	width: 100%;
 }
 
 /* Top navigation bar */
-nav {
+header {
 	position: fixed;
 	top: 0;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
@@ -43,27 +44,32 @@ footer {
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-nav ul, footer ul {
+header ul, footer ul {
 	list-style: none;
 	padding: 20px;
 	margin: 0px;
 }
-nav ul li, footer ul li {
+header ul li, footer ul li {
 	display: inline-block;
 	margin: 0px 10px;
 }
 
-nav ul li a, footer ul li a {
+header ul li a, footer ul li a {
 	text-decoration: none;
 	color: white;
 	-webkit-transition: text-shadow 0.25s; /* Chrome and Safari legacy support */
 	-moz-transition: text-shadow 0.25s; /* Mozilla Firefox legacy support */
 	transition: text-shadow 0.25s;
 }
-nav ul li a:hover, footer ul li a:hover {
+header ul li a:hover, footer ul li a:hover {
 	text-shadow: 0 0 5px #555, 0 0 6px #FFF, 0 0 7px #FFF, 0 0 8px #FFF;
 }
-#transition-element{
+
+#content {
+	display: flex;
+}
+
+#transition-element {
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -74,10 +80,10 @@ nav ul li a:hover, footer ul li a:hover {
 	opacity: 1;
 	z-index: 100;
 
-    animation-name: fadeOut;
+	animation-name: fadeOut;
 	animation-duration: 1s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
+	transition-timing-function: ease;
+	animation-fill-mode: forwards;
 }
 
 @keyframes fadeOut {
