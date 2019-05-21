@@ -1,8 +1,8 @@
 // Get the scrolling element
-let scrollEl = document.getElementById('main-scroll');
-let scrollElLs = scrollEl.getElementsByTagName('li');
+let scrollElm = document.getElementById('main-scroll');
+let scrollElmList = scrollElm.getElementsByTagName('li');
 
-scrollEl.addEventListener("wheel", onWheelScroll);
+scrollElm.addEventListener("wheel", onWheelScroll);
 
 let previousScrollIndex : number = 0;
 let currentScrollIndex : number = 0;
@@ -21,7 +21,7 @@ function onWheelScroll(event : WheelEvent) : void {
 		// Page scroll down
 		
 		// increase item selected index
-		if (currentScrollIndex < scrollElLs.length) {
+		if (currentScrollIndex < scrollElmList.length - 1) {
 			currentScrollIndex++;
 			currentScrollIndexChanged = true;
 		}
@@ -38,14 +38,48 @@ function onWheelScroll(event : WheelEvent) : void {
 
 	// Value has changed
 	if (currentScrollIndexChanged){
-		scrollEl.scrollTo({
-			top: scrollElLs.item(0).scrollHeight * currentScrollIndex,
+		scrollElm.scrollTo({
+			top: sumOfScrollHeights(scrollElmList, currentScrollIndex, false),
 			behavior: 'smooth'
 		});
-		scrollElLs.item(currentScrollIndex).firstElementChild.className = 'def selected-transition';
-		scrollElLs.item(previousScrollIndex).firstElementChild.className = 'def';
+		scrollElmList.item(currentScrollIndex).firstElementChild.className = 'def selected-transition';
+		scrollElmList.item(currentScrollIndex).className = 'def selected-transition';
+		scrollElmList.item(previousScrollIndex).firstElementChild.className = 'def';
+		scrollElmList.item(previousScrollIndex).className = 'def';
 
 		previousScrollIndex = currentScrollIndex;
 	}
 	
+}
+
+/**
+ * Calculates sum of the scrollHeights of a list of elements up to the nth-element.
+ * @param elementList Array of elements in a list.
+ * @param index Index of the last element to which the heights will be summed up to. Starts from 0.
+ * @param includeIndexElement Whether the height of the index element will be summed as well.
+ * @returns Sum of the scrollHeights of the list of elements up to the nth-element.
+ */
+function sumOfScrollHeights(elementList : HTMLCollectionOf<HTMLLIElement>, index : number, includeIndexElement : boolean) {
+	// Test if index is valid
+	if (index > elementList.length - 1 || index < 0) {
+		console.warn('sumOfScrollHeights: index (' + index + ') has an invalid value\nClamping value to between ' + 0 + ' and ' + (elementList.length - 1));
+		
+		mathClamp(index, 0, elementList.length - 1);
+	}
+
+	let heightSum : number = 0;
+	
+	for (let x = 0; x < index; x++) {
+		heightSum += elementList.item(x).scrollHeight;
+	}
+
+	if (includeIndexElement) {
+		heightSum += elementList.item(index).scrollHeight;
+	}
+	
+	return heightSum;
+}
+
+function mathClamp(val : number, min : number, max : number) {
+	return Math.min(Math.max(min, val), max);
 }

@@ -57,9 +57,9 @@ header ul li, footer ul li {
 header ul li a, footer ul li a {
 	text-decoration: none;
 	color: white;
-	-webkit-transition: text-shadow 0.25s; /* Chrome and Safari legacy support */
-	-moz-transition: text-shadow 0.25s; /* Mozilla Firefox legacy support */
-	transition: text-shadow 0.25s;
+	-webkit-transition: text-shadow 0.1s; /* Chrome and Safari legacy support */
+	-moz-transition: text-shadow 0.1s; /* Mozilla Firefox legacy support */
+	transition: text-shadow 0.1s;
 }
 header ul li a:hover, footer ul li a:hover {
 	text-shadow: 0 0 5px #555, 0 0 6px #FFF, 0 0 7px #FFF, 0 0 8px #FFF;

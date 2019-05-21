@@ -23,25 +23,36 @@
 #main-scroll { overflow: -moz-scrollbars-none; }
 #main-scroll { -ms-overflow-style: none; }
 
-.def {
+a.def {
 	font-size: 3em;
 	color: #333;
 	text-decoration: none;
 	padding-left: 0px;
+	-webkit-transition: all 0.5s ease-in-out, text-shadow 0.1s ease-in-out; /* Chrome and Safari legacy support */
+	-moz-transition: all 0.5s ease-in-out, text-shadow 0.1s ease-in-out; /* Mozilla Firefox legacy support */
+	transition: all 0.5s ease-in-out, text-shadow 0.1s ease-in-out;
+}
+li.def {
 	-webkit-transition: all 0.5s ease-in-out; /* Chrome and Safari legacy support */
 	-moz-transition: all 0.5s ease-in-out; /* Mozilla Firefox legacy support */
 	transition: all 0.5s ease-in-out;
 }
-.def:hover {
+a.def:hover {
 	text-shadow: 0 0 7px #333, 0 0 8px #333, 0 0 9px #333, 0 0 10px #333;
 }
-.selected-transition:hover {
+a.selected-transition:hover {
 	text-shadow: 0 0 5px #555, 0 0 6px #FFF, 0 0 7px #FFF, 0 0 8px #FFF;
 }
 
 /* Will be added using js to currently selected list item to trigger transition */
-.selected-transition {
+li.selected-transition {
 	padding-left: 40px;
+	color: white;
+	-webkit-transition: all 0.25s ease-in-out; /* Chrome and Safari legacy support */
+	-moz-transition: all 0.25s ease-in-out; /* Mozilla Firefox legacy support */
+	transition: all 0.25s ease-in-out;
+}
+a.selected-transition {
 	color: white;
 	-webkit-transition: all 0.25s ease-in-out; /* Chrome and Safari legacy support */
 	-moz-transition: all 0.25s ease-in-out; /* Mozilla Firefox legacy support */
