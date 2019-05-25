@@ -1,68 +1,120 @@
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css?family=Orbitron');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Raleway:300,400,400i,700,700i|Quicksand:300,400&display=swap');
 
-body {
-	margin: 0px auto;
-	width: 100%;
-	background-color: black;
-	color: white;
-	font-family: "Orbitron", "Arial", "Sans-Serif";
+html {
+	font-family: 'Raleway', sans-serif;
 	scroll-behavior: smooth;
 }
 
+body {
+	width: 100%;
+	margin: 0 auto;
+	
+	background-color: black;
+
+	color: white;
+}
+body::-webkit-scrollbar {
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb, body::-webkit-scrollbar-button {
+	background-color: rgba(255, 255, 255, .4);
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-button:hover {
+	background-color: rgba(255, 255, 255, .6);
+}
+body::-webkit-scrollbar-thumb:active, body::-webkit-scrollbar-button:active {
+	background-color: rgba(255, 255, 255, .8);
+}
 
 h1 {
-	color: #bbb;
+	color: #eee;
 	font-size: 3em;
+	font-weight: 300;
 }
+
 p {
-	color: #999;
+	padding-bottom: 1.5em;
+
+	color: #bbb;
 	font-size: 1em;
 	line-height: 1.5em;
-	font-family: "Raleway", "Arial", "Sans-Serif";
-	padding-bottom: 1.5em;
+	font-family: 'PT Sans', sans-serif;
+}
+
+a {
+	color: white;
+
+	-webkit-transition: text-shadow 0.25s ease;
+	-moz-transition: text-shadow 0.25s ease;
+	-ms-transition: text-shadow 0.25s ease;
+	-o-transition: text-shadow 0.25s ease;
+	transition: text-shadow 0.25s ease;
+}
+a:hover {
+	text-shadow: 0 0 8px #bbb, 0 0 8px #bbb, 0 0 8px #bbb;
 }
 
 header, footer {
-	z-index: 10;
 	width: 100%;
+
+	z-index: 10;
 }
 
 /* Top navigation bar */
 header {
 	position: fixed;
 	top: 0;
+
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 /* Bottom navigation bar */
 footer {
 	position: fixed;
-	font-size: 0.8em;
 	bottom: 0;
+
+	font-size: 0.8em;
+
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+footer ul li::after {
+	/* Draws a dot after each list element */
+	content: '\00b7';
+	cursor: default;
+}
+footer ul li:last-child::after {
+	/* Not draw a dot after the last list element */
+	content: '';
 }
 
 header ul, footer ul {
 	list-style: none;
+	margin: 0;
 	padding: 20px;
-	margin: 0px;
 }
 header ul li, footer ul li {
 	display: inline-block;
-	margin: 0px 10px;
 }
-
 header ul li a, footer ul li a {
-	text-decoration: none;
+	margin: 0 10px;
 	color: white;
-	-webkit-transition: text-shadow 0.1s; /* Chrome and Safari legacy support */
-	-moz-transition: text-shadow 0.1s; /* Mozilla Firefox legacy support */
-	transition: text-shadow 0.1s;
+	text-decoration: none;
+
+	-webkit-transition: text-shadow 0.15s;
+	-moz-transition: text-shadow 0.15s;
+	-ms-transition: text-shadow 0.15s;
+	-o-transition: text-shadow 0.15s;
+	transition: text-shadow 0.15s;
 }
 header ul li a:hover, footer ul li a:hover {
-	text-shadow: 0 0 5px #555, 0 0 6px #FFF, 0 0 7px #FFF, 0 0 8px #FFF;
+	text-shadow: 0 0 8px white, 0 0 8px white, 0 0 8px white;
 }
 
 #content {
@@ -72,9 +124,11 @@ header ul li a:hover, footer ul li a:hover {
 #transition-element {
 	width: 100%;
 	height: 100%;
+
+	position: fixed;
 	left: 0;
 	top: 0;
-	position: fixed;
+
 	background-color: black;
 	pointer-events: none;
 	opacity: 1;

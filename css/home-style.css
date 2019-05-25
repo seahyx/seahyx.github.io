@@ -1,16 +1,60 @@
 .content-project {
-	display: flex;
 	width: 100%;
 	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 .content-project h1 a {
 	display: flex;
+
 	font-size: 1.5em;
+	font-family: 'QuickSand', sans-serif;
+	font-weight: 300;
 	text-decoration: none;
+	text-transform: uppercase;
 	text-align: center;
+	text-shadow: 0 3px 0 black;
+
+	-webkit-transform: translateY(-3px);
+	-moz-transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
+	-o-transform: translateY(-3px);
+	transform: translateY(-3px);
+
+	opacity: 0.87;
+
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-ms-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+.content-project h1 a:hover {
+	text-shadow: 2px 7px 0 black;
+
+	-webkit-transform: translateY(-7px);
+	-moz-transform: translateY(-7px);
+	-ms-transform: translateY(-7px);
+	-o-transform: translateY(-7px);
+	transform: translateY(-7px);
+}
+.content-project h1 a:active {
+	text-shadow: 0 0 0 black;
+
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
 }
 
 .content-container {
@@ -18,6 +62,7 @@
 	justify-content: inherit;
 	align-items: inherit;
 	flex-direction: inherit;
+
 	z-index: 1;
 }
 
@@ -26,54 +71,92 @@
 	flex-flow: row wrap;
 }
 .content-buttons a {
-	-webkit-appearance: button;
-    -moz-appearance: button;
-	appearance: button;
-
-	padding: 10px;
+	display: flex;
+	position: relative;
 	margin: 10px;
-	text-decoration: none;
-	color: initial;
+	padding: 14px 24px;
+	justify-content: center;
+	align-items: center;
+	
 	background-color: orange;
+	border: 2px solid rgb(128, 83, 0);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Consolas', monospace;
+	font-weight: bold;
+	text-shadow: 0 2px 0 black;
+
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-ms-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+.content-buttons a:hover {
+	text-shadow: 0 2px 0 grey; /*Override default animation*/
+	box-shadow: 0 4px 0 rgb(128, 83, 0);
+
+	-webkit-transform: translateY(-4px);
+	-moz-transform: translateY(-4px);
+	-ms-transform: translateY(-4px);
+	-o-transform: translateY(-4px);
+	transform: translateY(-4px);
+}
+.content-buttons a:active {
+	background-color: darkorange;
+	box-shadow: 0 0 0 rgb(128, 83, 0);
+
+	color: lightgrey;
+
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
 }
 
 .background-overlay {
-	position: absolute;
 	width: 100%;
 	height: 100%;
+
+	position: absolute;
+
 	background-color: black;
+
 	opacity: .5;
 }
-
-
 
 #content {
 	flex-direction: column;
 }
 
 #title {
+	margin: auto 0 auto 40px;
 	white-space: nowrap;
 	font-size: 4em;
-	margin: auto 0px auto 40px;
 }
 
 #project-tetris {
 	background-color: bisque;
 }
-#project-tetris h1 a {
-	color: white;
-}
 
 #project-starField {
 	background-color: dimgray;
 }
-#project-starField h1 a {
-	color: white;
-}
 
 #project-magneticField {
 	background-color: cadetblue;
-}
-#project-magneticField h1 a { 
-	color: white;
 }
