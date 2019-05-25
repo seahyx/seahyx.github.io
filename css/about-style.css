@@ -1,5 +1,8 @@
 #about {
-	margin: 30px;
-	padding: 20px;
+	width: 100%;
+	min-height: calc(100vh - 120px);
+
+	margin: 0 30px;
+	padding: 60px;
 	background: #0f0f0f;
 }

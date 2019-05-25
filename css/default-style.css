@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Raleway:300,400,400i,700,700i|Quicksand:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Raleway:300,400,700|Quicksand:300,400&display=swap');
 
 html {
 	font-family: 'Raleway', sans-serif;
@@ -38,6 +38,10 @@ h1 {
 	font-size: 3em;
 	font-weight: 300;
 }
+h1::selection {
+	background: white;
+	color: black;
+}
 
 p {
 	padding-bottom: 1.5em;
@@ -46,6 +50,10 @@ p {
 	font-size: 1em;
 	line-height: 1.5em;
 	font-family: 'PT Sans', sans-serif;
+}
+p::selection {
+	background: white;
+	color: black;
 }
 
 a {
@@ -59,6 +67,10 @@ a {
 }
 a:hover {
 	text-shadow: 0 0 8px #bbb, 0 0 8px #bbb, 0 0 8px #bbb;
+}
+a::selection {
+	background: white;
+	color: black;
 }
 
 header, footer {
@@ -115,6 +127,83 @@ header ul li a, footer ul li a {
 }
 header ul li a:hover, footer ul li a:hover {
 	text-shadow: 0 0 8px white, 0 0 8px white, 0 0 8px white;
+}
+
+.button {
+	display: flex;
+	position: relative;
+	margin: 10px;
+	padding: 14px 24px;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: orange;
+	border: 2px solid rgb(128, 83, 0);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Consolas', monospace;
+	font-weight: bold;
+	text-shadow: 0 2px 0 black;
+
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-ms-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+.button:hover {
+	background-color: rgb(255, 183, 49);
+
+	text-shadow: 0 2px 0 grey; /*Override default animation*/
+	box-shadow: 0 4px 0 rgb(128, 83, 0);
+
+	-webkit-transform: translateY(-4px);
+	-moz-transform: translateY(-4px);
+	-ms-transform: translateY(-4px);
+	-o-transform: translateY(-4px);
+	transform: translateY(-4px);
+}
+.button:active {
+	background-color: darkorange;
+	box-shadow: 0 0 0 rgb(128, 83, 0);
+
+	color: lightgrey;
+
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+.button.github {
+	background-color: black;
+	border-color: white;
+	
+	box-shadow: 0 0 0 white;
+}
+.button.github:hover {
+	background-color: #333;
+	
+	box-shadow: 0 4px 0 white;
+}
+.button.github:active {
+	background-color: #666;
+
+	box-shadow: 0 0 0 white;
 }
 
 #content {
