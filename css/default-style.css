@@ -107,17 +107,25 @@ footer ul li:last-child::after {
 }
 
 header ul, footer ul {
+	display: flex;
+	flex-flow: row nowrap;
+	overflow: scroll;
+	
 	list-style: none;
 	margin: 0;
 	padding: 20px;
 }
+header ul::-webkit-scrollbar, footer ul::-webkit-scrollbar {
+	display: none;
+}
 header ul li, footer ul li {
-	display: inline-block;
+	display: flex;
 }
 header ul li a, footer ul li a {
 	margin: 0 10px;
 	color: white;
 	text-decoration: none;
+	white-space: nowrap;
 
 	-webkit-transition: text-shadow 0.15s;
 	-moz-transition: text-shadow 0.15s;
@@ -133,7 +141,7 @@ header ul li a:hover, footer ul li a:hover {
 	display: flex;
 	position: relative;
 	margin: 10px;
-	padding: 14px 24px;
+	padding: 14px;
 	justify-content: center;
 	align-items: center;
 	
@@ -204,6 +212,19 @@ header ul li a:hover, footer ul li a:hover {
 	background-color: #666;
 
 	box-shadow: 0 0 0 white;
+}
+.button.github::before {
+	content: '';
+
+	width: 1.5em;
+	height: 1.5em;
+
+	margin-right: 10px;
+
+	background: url(../assets/icons/github.svg);
+	background-size: 1.5em 1.5em;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
 }
 
 #content {
