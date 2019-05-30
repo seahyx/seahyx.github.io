@@ -1,9 +1,8 @@
 /* Import fonts */
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Raleway:300,400,700|Quicksand:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,700|Quicksand:300,400&display=swap');
 
 html {
-	font-family: 'Raleway', sans-serif;
-	scroll-behavior: smooth;
+	font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -13,30 +12,14 @@ body {
 	background-color: black;
 
 	color: white;
-}
-body::-webkit-scrollbar {
-	width: 10px;
-}
-body::-webkit-scrollbar-thumb, body::-webkit-scrollbar-button {
-	background-color: rgba(255, 255, 255, .4);
-	
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	border-radius: 10px;
-}
-body::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-button:hover {
-	background-color: rgba(255, 255, 255, .6);
-}
-body::-webkit-scrollbar-thumb:active, body::-webkit-scrollbar-button:active {
-	background-color: rgba(255, 255, 255, .8);
+
+	overflow: hidden;
 }
 
 h1 {
 	color: #eee;
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 700;
 }
 h1::selection {
 	background: white;
@@ -47,9 +30,9 @@ p {
 	padding-bottom: 1.5em;
 
 	color: #bbb;
-	font-size: 1em;
-	line-height: 1.5em;
-	font-family: 'PT Sans', sans-serif;
+	font-size: 1.2em;
+	line-height: 2em;
+	font-family: 'QuickSand', sans-serif;
 }
 p::selection {
 	background: white;
@@ -73,10 +56,22 @@ a::selection {
 	color: black;
 }
 
+span::selection {
+	background: white;
+	color: black;
+}
+
+b::selection {
+	background: white;
+	color: black;
+}
+
 header, footer {
 	width: 100%;
 
-	z-index: 10;
+	pointer-events: none;
+
+	z-index: 10;	
 }
 
 /* Top navigation bar */
@@ -126,6 +121,8 @@ header ul li a, footer ul li a {
 	color: white;
 	text-decoration: none;
 	white-space: nowrap;
+
+	pointer-events: all;
 
 	-webkit-transition: text-shadow 0.15s;
 	-moz-transition: text-shadow 0.15s;
@@ -226,7 +223,30 @@ header ul li a:hover, footer ul li a:hover {
 }
 
 #content {
+	height: 100vh;
+
 	display: flex;
+
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+#content::-webkit-scrollbar {
+	width: 10px;
+}
+#content::-webkit-scrollbar-thumb, body::-webkit-scrollbar-button {
+	background-color: rgba(255, 255, 255, .4);
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+#content::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-button:hover {
+	background-color: rgba(255, 255, 255, .6);
+}
+#content::-webkit-scrollbar-thumb:active, body::-webkit-scrollbar-button:active {
+	background-color: rgba(255, 255, 255, .8);
 }
 
 #transition-element {

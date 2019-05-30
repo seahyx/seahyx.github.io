@@ -1,11 +1,16 @@
 .content-project {
 	width: 100%;
 	height: 100vh;
+	min-height: 100vh;
+
+	position: relative;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	scroll-snap-align: start;
 }
 .content-project h1 a {
 	display: flex;
@@ -219,6 +224,8 @@
 
 #content {
 	flex-direction: column;
+
+	scroll-snap-type: y mandatory;
 }
 
 #chevron-1, #chevron-2 {
