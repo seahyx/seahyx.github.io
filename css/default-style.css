@@ -138,55 +138,36 @@ header ul li a:hover, footer ul li a:hover {
 	display: flex;
 	position: relative;
 	margin: 10px;
-	padding: 14px;
+	padding: 10px 20px;
 	justify-content: center;
 	align-items: center;
 	
-	background-color: orange;
-	box-shadow: 0 0 0 rgb(128, 83, 0);
-	border: 2px solid rgb(128, 83, 0);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+	border: 2px solid white;
 
 	color: white;
 	text-decoration: none;
 	text-align: center;
-	font-family: 'Consolas', monospace;
-	font-weight: bold;
-	text-shadow: 0 2px 0 black;
+	font-family: 'Roboto Mono', monospace;
+	text-shadow: none;
 
-	-webkit-transition: all 0.25s ease;
-	-moz-transition: all 0.25s ease;
-	-ms-transition: all 0.25s ease;
-	-o-transition: all 0.25s ease;
-	transition: all 0.25s ease;
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-ms-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	transition: all 0.15s ease;
 }
 .button:hover {
-	background-color: rgb(255, 183, 49);
-	text-shadow: 0 2px 0 grey; /*Override default animation*/
-	box-shadow: 0 4px 0 rgb(128, 83, 0);
-
-	-webkit-transform: translateY(-4px);
-	-moz-transform: translateY(-4px);
-	-ms-transform: translateY(-4px);
-	-o-transform: translateY(-4px);
-	transform: translateY(-4px);
+	background-color: white;
+	
+	color: black;
+	text-shadow: none; /*Override default <a> animation*/
 }
 .button:active {
-	background-color: darkorange;
-	box-shadow: 0 0 0 rgb(128, 83, 0);
-	border-style: inset;
+	background-color: #ccc;
+	border-color: #ccc;
 
-	color: lightgrey;
-
-	-webkit-transform: translateY(2px);
-	-moz-transform: translateY(2px);
-	-ms-transform: translateY(2px);
-	-o-transform: translateY(2px);
-	transform: translateY(2px);
+	color: #777;
 
 	-webkit-transition: none;
 	-moz-transition: none;
@@ -195,19 +176,7 @@ header ul li a:hover, footer ul li a:hover {
 	transition: none;
 }
 
-.button.github {
-	background-color: black;
-	box-shadow: 0 0 0 white;
-	border-color: white;
-}
-.button.github:hover {
-	background-color: #333;
-	box-shadow: 0 4px 0 white;
-}
-.button.github:active {
-	background-color: #666;
-	box-shadow: 0 0 0 white;
-}
+
 .button.github::before {
 	content: '';
 
@@ -220,6 +189,16 @@ header ul li a:hover, footer ul li a:hover {
 	background-size: 1.1em 1.1em;
 	-webkit-filter: invert(100%);
 	filter: invert(100%);
+
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-ms-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+.button.github:hover::before {
+	-webkit-filter: invert(0);
+	filter: invert(0);
 }
 
 #content {
