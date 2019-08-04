@@ -24,8 +24,10 @@
 	opacity: 0;
 	
 	border-width: .15em;
-	border-style: solid;
+	border-style: solid white;
 	border-radius: .3em;
+
+	background-color: white;
 
 	animation: widenFadeIn .5s ease .5s forwards;
 }
