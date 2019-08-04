@@ -1,32 +1,33 @@
 .about-page {
 	width: 100%;
-	height: fit-content;
-	min-height: 90%;
-
-	padding-top: 5%;
+	height: 100%;
 
 	position: relative;
 
 	display: flex;
 	flex-direction: column;
 }
-.about-page h1 {
-	max-height: 10vw;
+.about-title {
+	position: absolute;
 
-	margin: 0 0 0 5%;
+	height: 100%;
+	width: 100%;
+
+	pointer-events: none;
+
+	-webkit-transform: translateZ(1px) scale(.5);
+	-moz-transform: translateZ(1px) scale(.5);
+	-ms-transform: translateZ(1px) scale(.5);
+	-o-transform: translateZ(1px) scale(.5);
+	transform: translateZ(1px) scale(.5);
+}
+.about-title h1 {
+	margin: 5%;
 	
 	color: #777;
 
 	font-size: 18vw;
 	line-height: 15vw;
-
-	pointer-events: none;
-
-	-webkit-transform: translateY(100px) translateZ(1px) scale(.5);
-	-moz-transform: translateY(100px) translateZ(1px) scale(.5);
-	-ms-transform: translateY(100px) translateZ(1px) scale(.5);
-	-o-transform: translateY(100px) translateZ(1px) scale(.5);
-	transform: translateY(100px) translateZ(1px) scale(.5);
 }
 .about-page p {
 	max-width: 25em;
@@ -69,12 +70,18 @@
 
 #about-me p {
 	align-self: flex-end;
+	margin-top: 15%;
 }
 
 #about-site h1 {
 	text-align: end;
 }
 
+#about-site p {
+	margin-top: 18%;
+}
+
 #about-contact p {
 	align-self: flex-end;
+	margin-top: 25%;
 }
