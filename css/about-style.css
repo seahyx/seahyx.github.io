@@ -59,9 +59,15 @@
 	font-weight: 400;
 }
 
+body {
+	overflow: hidden;
+}
 
 #content {
+	height: 100vh;
+
 	flex-flow: row wrap;
+	overflow: auto;
 
 	/* For parallax effect */
 	-webkit-perspective: 2px;
