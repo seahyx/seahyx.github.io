@@ -15,25 +15,6 @@ body {
 
 	overflow: auto;
 }
-body::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
-}
-body::-webkit-scrollbar-thumb, body::-webkit-scrollbar-button {
-	background-color: rgba(255, 255, 255, .4);
-	
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	border-radius: 10px;
-}
-body::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-button:hover {
-	background-color: rgba(255, 255, 255, .6);
-}
-body::-webkit-scrollbar-thumb:active, body::-webkit-scrollbar-button:active {
-	background-color: rgba(255, 255, 255, .8);
-}
 
 h1 {
 	color: #eee;
@@ -245,4 +226,26 @@ header ul li a:hover, footer ul li a:hover {
 	100% {
 		opacity: 0;
 	}
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-button {
+	background-color: rgba(255, 255, 255, .25);
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+
+	height: 8px;
+}
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-button:hover {
+	background-color: rgba(255, 255, 255, .4);
+}
+::-webkit-scrollbar-thumb:active, ::-webkit-scrollbar-button:active {
+	background-color: rgba(255, 255, 255, .8);
 }
