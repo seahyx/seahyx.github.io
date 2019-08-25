@@ -1,4 +1,7 @@
 #content {
+	display: flex;
+	flex-flow: column nowrap;
+
 	min-height: 100%;
 }
 
@@ -50,6 +53,12 @@
 	display: flex;
 	flex-flow: row wrap;
 
+	width: -moz-available;
+	width: -webkit-fill-available;
+	max-width: 1200px;
+
+	align-self: center;
+
 	margin: 5% 5% 15% 5%;
 	padding: 0;
 
@@ -61,35 +70,33 @@
 #project-list li {
 	position: relative;
 
-	width: 30%;
-	max-width: 500px;
-	height: fit-content;
-
-	margin: 20px;
+	width: 33%;
+	max-width: 800px;
 }
 @media only screen and (max-width: 1400px) {
 	#project-list li {
-		width: 45%;
+		width: 50%;
 	}
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
 	#project-list li {
 		width: 100%;
 	}
 }
 
-.project-item {
-	position: absolute;
-	
-	width: 100%;
-	height: 100%;
+.project-img {
+	position: relative;
+
+	width: 80%;
+	margin: auto;
+	margin-bottom: 20px;
 
 	overflow: hidden;
 
 	border: solid 2px white;
 }
 
-.project-item-padding {
+.project-img-padding {
 	width: 100%;
 
 	/* To maintain aspect ratio */
@@ -97,9 +104,29 @@
 	padding-top: 75%;
 }
 
-.project-img {
+.project-img img {
+	position: absolute;
+
 	width: 100%;
 	height: 100%;
 
 	object-fit: cover;
+}
+
+.project-text {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 80px;
+}
+
+.project-text p {
+	padding: 0;
+	margin-bottom: 0;
+
+	font-family: 'Robodo Mono', monospace;
+}
+
+.project-title {
+	font-size: 1.5em;
+	font-weight: 700;
 }
