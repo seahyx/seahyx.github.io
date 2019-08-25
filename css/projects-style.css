@@ -32,7 +32,7 @@
 
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
-	font-size: 7vw;
+	font-size: 5vw;
 
 	text-shadow: 3px 3px rgba(0, 0, 0, .8);
 }
@@ -43,8 +43,9 @@
 
 	margin: 5% 0 0 5%;
 
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	font-weight: 300;
+	font-size: 1em;
 	
 	text-shadow: 2px 2px rgba(0, 0, 0, .8);
 }
@@ -96,12 +97,38 @@
 	border: solid 2px white;
 }
 
-.project-img-padding {
-	width: 100%;
+.project-button-container {
+	position: absolute;
+	/* Will slide back up on hover */
+	opacity: 0;
 
-	/* To maintain aspect ratio */
-	height: 0;
-	padding-top: 75%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+
+	width: 70%;
+	height: 100%;
+
+	padding: 0 15%;
+
+	background-color: rgba(0, 0, 0, .5);
+
+	-webkit-transition: .25s ease;
+	-moz-transition: .25s ease;
+	-ms-transition: .25s ease;
+	-o-transition: .25s ease;
+	transition: .25s ease;
+
+	z-index: 1;
+}
+.project-img:hover .project-button-container {
+	opacity: 1;
+
+	-webkit-transition: .15s ease;
+	-moz-transition: .15s ease;
+	-ms-transition: .15s ease;
+	-o-transition: .15s ease;
+	transition: .15s ease;
 }
 
 .project-img img {
@@ -111,6 +138,13 @@
 	height: 100%;
 
 	object-fit: cover;
+}
+
+.project-img-padding {
+	width: 100%;
+	/* To maintain aspect ratio */
+	height: 0;
+	padding-top: 75%;
 }
 
 .project-text {
@@ -127,6 +161,10 @@
 }
 
 .project-title {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 700;
+}
+
+.project-desc {
+	font-size: 1em;
 }
