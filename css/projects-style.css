@@ -41,7 +41,7 @@
 	width: 50%;
 	max-width: 35em;
 
-	margin: 5% 0 0 5%;
+	margin: 5%;
 
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 300;
@@ -163,6 +163,9 @@
 .project-title {
 	font-size: 1.2em;
 	font-weight: 700;
+}
+.project-title a {
+	text-decoration: none;
 }
 
 .project-desc {
