@@ -1,7 +1,10 @@
-theme: jekyll-theme-hacker
+theme: minima
 title: Seah Ying Xiang | Home - seahyx.github.io
+email: seahyx@gmail.com
+github_username: seahyx
 description: seahyx is Seah Ying Xiang. Anything goes in here. Weird programming crap to cool stuff of the century, and even things completely unrelated to anything. It's all here.
-url: https://seahyx.github.io
+baseurl: '/'
+url: 'localhost:4000'
 google_site_verification: rcn0W-VkKUx63rQ2laiQ8rV2nbHcoeB8z0htPVaTmR4
 plugins:
   - jekyll-seo-tag
