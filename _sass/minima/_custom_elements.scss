@@ -1,0 +1,68 @@
+/**
+ * Theme switcher
+ */
+//  Hide the real switch
+input.theme-switch {
+	display: none;
+}
+// Modify theme switch label display
+label.theme-display {
+	position: relative;
+	top: 0;
+	right: 0;
+
+	min-height: inherit;
+
+	span {
+		@include display-flex;
+		
+		min-height: inherit;
+		min-width: 5rem;
+
+		padding: 0 10px;
+		margin: 0 10px;
+
+		text-align: center;
+	
+		cursor: pointer;
+		
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	input ~ {
+		.dark {
+			display: flex;
+			
+			background-color: $dark-background-color;
+			color: $dark-text-color;
+		}
+		.light {
+			display: none;
+			
+			background-color: $light-background-color;
+			color: $light-text-color;
+		}
+	}
+
+	input:checked ~ {
+		.dark {
+			display: none;
+		}
+		.light {
+			display: flex;
+		}
+	}
+}
+
+/**
+ * Header wrapper override
+ */
+
+ header .wrapper {
+	@include display-flex(row, space-between);
+
+	min-height: inherit;
+ }

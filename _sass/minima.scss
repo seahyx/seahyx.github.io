@@ -10,21 +10,67 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+// Light mode colours
+$light-text-color:			hsl(0, 0%, 13%);
+$light-text-color-light:	hsl(0, 0%, 33%);
+$light-background-color:	#fdfdfd;
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$light-brand-color:			hsl(327, 100%, 50%);
+$light-brand-color-light:	hsl(327, 100%, 80%);
+$light-brand-color-dark:	hsl(327, 100%, 30%);
 
-$table-text-align: left !default;
+$light-grey-color:			hsl(0, 0%, 60%);
+$light-grey-color-light:	hsl(0, 0%, 80%);
+$light-grey-color-dark:		hsl(0, 0%, 40%);
+
+// Dark mode colours
+$dark-text-color:			hsl(0, 0%, 99%);
+$dark-text-color-light:		hsl(0, 0%, 80%);
+$dark-background-color:		#000;
+
+$dark-brand-color:			hsl(327, 100%, 50%);
+$dark-brand-color-light:	hsl(327, 100%, 30%);
+$dark-brand-color-dark:		hsl(327, 100%, 80%);
+
+$dark-grey-color:			hsl(0, 0%, 40%);
+$dark-grey-color-light:		hsl(0, 0%, 60%);
+$dark-grey-color-dark:		hsl(0, 0%, 20%);
+
+:root {
+	--text-color:			#{$light-text-color};
+	--text-color-light:		#{$light-text-color-light};
+	--background-color:		#{$light-background-color};
+
+	--brand-color:			#{$light-brand-color};
+	--brand-color-light:	#{$light-brand-color-light};
+	--brand-color-dark:		#{$light-brand-color-dark};
+
+	--grey-color:			#{$light-grey-color};
+	--grey-color-light:		#{$light-grey-color-light};
+	--grey-color-dark:		#{$light-grey-color-dark};
+}
+
+html[data-theme='dark'] {
+	--text-color:			#{$dark-text-color};
+	--text-color-light:		#{$dark-text-color-light};
+	--background-color:		#{$dark-background-color};
+
+	--brand-color:			#{$dark-brand-color};
+	--brand-color-light:	#{$dark-brand-color-light};
+	--brand-color-dark:		#{$dark-brand-color-dark};
+
+	--grey-color:			#{$dark-grey-color};
+	--grey-color-light:		#{$dark-grey-color-light};
+	--grey-color-dark:		#{$dark-grey-color-dark};
+}
+
+$table-text-align:	left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:		800px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-palm:			600px !default;
+$on-laptop:			800px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -33,19 +79,36 @@ $on-laptop:        800px !default;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
+
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
+	@media screen and (max-width: $device) {
+		@content;
+	}
 }
 
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+	font-size: $base-font-size * $ratio;
+}
+
+@mixin transitions-all {
+	-webkit-transition:	all 0.15s ease;
+	-moz-transition:	all 0.15s ease;
+	-ms-transition:		all 0.15s ease;
+	-o-transition:		all 0.15s ease;
+	transition:			all 0.15s ease;
+}
+
+@mixin display-flex($orientation: row, $justify: center, $align: center) {
+	display: flex;
+	flex-flow: $orientation nowrap;
+	align-items: $align;
+	justify-content: $justify;
 }
 
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
+	"minima/base",
+	"minima/layout",
+	"minima/syntax-highlighting",
+	"minima/custom_elements"
 ;
