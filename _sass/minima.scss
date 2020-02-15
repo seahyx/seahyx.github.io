@@ -24,7 +24,7 @@ $light-grey-color-light:	hsl(0, 0%, 80%);
 $light-grey-color-dark:		hsl(0, 0%, 40%);
 
 // Dark mode colours
-$dark-text-color:			hsl(0, 0%, 99%);
+$dark-text-color:			hsl(0, 0%, 90%);
 $dark-text-color-light:		hsl(0, 0%, 80%);
 $dark-background-color:		#000;
 
@@ -33,8 +33,8 @@ $dark-brand-color-light:	hsl(327, 100%, 30%);
 $dark-brand-color-dark:		hsl(327, 100%, 80%);
 
 $dark-grey-color:			hsl(0, 0%, 50%);
-$dark-grey-color-light:		hsl(0, 0%, 60%);
-$dark-grey-color-dark:		hsl(0, 0%, 20%);
+$dark-grey-color-light:		hsl(0, 0%, 20%);
+$dark-grey-color-dark:		hsl(0, 0%, 60%);
 
 :root {
 	--text-color:			#{$light-text-color};
