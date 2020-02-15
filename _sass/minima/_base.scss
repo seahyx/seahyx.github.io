@@ -157,6 +157,7 @@ code {
 
 code {
 	padding: 1px 5px;
+	white-space: nowrap;
 }
 
 pre {
@@ -167,6 +168,7 @@ pre {
 		border: 0;
 		padding-right: 0;
 		padding-left: 0;
+		white-space: inherit;
 	}
 }
 
