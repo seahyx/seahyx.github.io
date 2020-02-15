@@ -1,8 +1,8 @@
 theme: minima
-title: Seah Ying Xiang | Home - seahyx.github.io
+title: Seah Ying Xiang | seahyx.github.io
 email: seahyx@gmail.com
 github_username: seahyx
-description: seahyx is Seah Ying Xiang. Anything goes in here. Weird programming crap to cool stuff of the century, and even things completely unrelated to anything. It's all here.
+description: HTML, CSS, JS, Flask, Flutter, Java, Python, C++, C#, Lua, Dart, and (My)SQL. I admit it, web dev makes me sick, but it's hella lit. Plus, I love 3d modelling, and making games (yes but I suck at both).
 baseurl: '/'
 url: 'localhost:4000'
 google_site_verification: rcn0W-VkKUx63rQ2laiQ8rV2nbHcoeB8z0htPVaTmR4
