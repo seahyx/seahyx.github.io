@@ -95,7 +95,7 @@ header .wrapper {
 
 		@include filter(brightness(0.75));
 
-		@include animation(hue-rotate 10s linear 0s infinite);
+		@include animation(hue-rotate 5s linear 0s infinite);
 	}
 
 	.caption {
@@ -135,7 +135,7 @@ header .wrapper {
 
 			background-color: transparentize($color: blue, $amount: .25);
 
-			@include animation(hue-rotate 10s linear 0s infinite);
+			@include animation(hue-rotate 5s linear 0s infinite);
 
 			@include media-query($on-laptop) {
 				font-size: 20vw;
@@ -152,7 +152,7 @@ header .wrapper {
 
 			background-color: transparentize($color: blue, $amount: .25);
 
-			@include animation(hue-rotate 10s linear 0s infinite);
+			@include animation(hue-rotate 5s linear 0s infinite);
 		}
 	}
 
