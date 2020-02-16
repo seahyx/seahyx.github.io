@@ -2,11 +2,6 @@
 
 > _A picture may be worth a thousand words, but a website is worth a thousand bucks._
 
-\
-\
-\
-\
-
 **Owo** what's this?
 
 A [website](https://seahyx.github.io/)?
