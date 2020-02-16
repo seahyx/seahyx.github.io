@@ -8,6 +8,40 @@
 
 	// Positioning context for the mobile navigation icon
 	position: relative;
+
+	&.floating {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: transparent;
+		text-shadow: 0 1px 1px $dark-background-color;
+		border-bottom: none;
+		z-index: 1;
+
+		.site-title {
+			&, &:visited {
+				color: $dark-text-color-light;
+			}
+		}
+		
+		.page-link {
+			color: $dark-text-color;
+
+			@include media-query($on-palm) {
+				text-shadow: none;
+				color: var(--text-color);
+			}
+		}
+
+		label.theme-display {
+			text-shadow: none;
+		}
+
+		+ .page-content {
+			padding-top: 0;
+		}
+	}
 }
 
 .site-title {

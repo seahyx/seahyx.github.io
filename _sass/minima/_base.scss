@@ -6,9 +6,10 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
 	margin: 0;
 	padding: 0;
+	
+	@include scrollbar(12px, var(--text-color), var(--background-color));
+	@include transitions-all;
 }
-
-
 
 /**
  * Basic styling

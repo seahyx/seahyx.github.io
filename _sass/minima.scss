@@ -50,7 +50,7 @@ $dark-grey-color-dark:		hsl(0, 0%, 60%);
 	--grey-color-dark:		#{$light-grey-color-dark};
 }
 
-html[data-theme='dark'] {
+:root[data-theme='dark'] {
 	--text-color:			#{$dark-text-color};
 	--text-color-light:		#{$dark-text-color-light};
 	--background-color:		#{$dark-background-color};
@@ -98,11 +98,58 @@ $on-laptop:			800px !default;
 	transition:			all 0.15s ease;
 }
 
+@mixin transitions($transition...) {
+	-webkit-transition:	$transition;
+	-moz-transition:	$transition;
+	-ms-transition:		$transition;
+	-o-transition:		$transition;
+	transition:			$transition;
+}
+
+@mixin animation($animation...) {
+	-webkit-animation:	$animation;
+	-moz-animation:		$animation;
+	-o-animation:		$animation;
+	animation:			$animation;
+}
+
 @mixin display-flex($orientation: row, $justify: center, $align: center) {
 	display: flex;
 	flex-flow: $orientation nowrap;
 	align-items: $align;
 	justify-content: $justify;
+}
+
+@mixin filter($filter...) {
+	-webkit-filter: $filter;
+	filter: $filter;
+}
+
+@mixin scrollbar(
+	$size,
+	$foreground-color,
+	$background-color: mix($foreground-color, white,  50%)) {
+	
+	// For Google Chrome
+	&::-webkit-scrollbar {
+		width:  $size;
+		height: $size;
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		background: $foreground-color;
+	}
+	
+	&::-webkit-scrollbar-track {
+		background: $background-color;
+		border: 1px solid $foreground-color;
+	}
+	
+	// For Internet Explorer
+	& {
+		scrollbar-face-color: $foreground-color;
+		scrollbar-track-color: $background-color;
+	}
 }
 
 // Import partials.
