@@ -34,29 +34,35 @@ label.theme-display {
 		@include media-query($on-palm) {
 			min-width: auto;
 		}
+
+		@include transitions-all;
 	}
 
 	input ~ {
 		.dark {
-			display: flex;
+			opacity: 1;
 			
-			background-color: $dark-background-color;
+			background: linear-gradient($dark-background-color, transparent);
 			color: $dark-text-color;
+			text-shadow: 0 0 5px $light-text-color;
 		}
 		.light {
-			display: none;
+			position: absolute;
+
+			opacity: 0;
 			
-			background-color: $light-background-color;
+			background: linear-gradient($light-background-color, transparent);
 			color: $light-text-color;
+			text-shadow: 0 0 5px $dark-text-color;
 		}
 	}
 
 	input:checked ~ {
 		.dark {
-			display: none;
+			opacity: 0;
 		}
 		.light {
-			display: flex;
+			opacity: 1;
 		}
 	}
 }
