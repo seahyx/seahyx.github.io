@@ -1,4 +1,3 @@
-theme: minima
 title: Seah Ying Xiang | seahyx.github.io
 email: seahyx@gmail.com
 github_username: seahyx
@@ -6,5 +5,9 @@ description: HTML, CSS, JS, TS, Flask, Flutter, Java, Python, C++, C#, Lua, Dart
 baseurl: '/'
 url: 'localhost:4000'
 google_site_verification: rcn0W-VkKUx63rQ2laiQ8rV2nbHcoeB8z0htPVaTmR4
+remote_theme: seahyx/jekyll-theme-pseudominima
 plugins:
   - jekyll-seo-tag
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-remote-theme
