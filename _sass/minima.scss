@@ -127,8 +127,10 @@ $on-laptop:			800px !default;
 
 @mixin scrollbar(
 	$size,
-	$foreground-color,
-	$background-color: mix($foreground-color, white,  50%)) {
+	$thumb-color,
+	$thumb-color-hover,
+	$thumb-color-active,
+	$track-color: mix($thumb-color, white,  50%)) {
 	
 	// For Google Chrome
 	&::-webkit-scrollbar {
@@ -137,18 +139,24 @@ $on-laptop:			800px !default;
 	}
 	
 	&::-webkit-scrollbar-thumb {
-		background: $foreground-color;
+		background: $thumb-color;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background: $thumb-color-hover;
+	}
+	&::-webkit-scrollbar-thumb:active {
+		background: $thumb-color-active;
 	}
 	
 	&::-webkit-scrollbar-track {
-		background: $background-color;
-		border: 1px solid $foreground-color;
+		background: $track-color;
+		border: 1px solid $thumb-color;
 	}
 	
 	// For Internet Explorer
 	& {
-		scrollbar-face-color: $foreground-color;
-		scrollbar-track-color: $background-color;
+		scrollbar-face-color: $thumb-color;
+		scrollbar-track-color: $track-color;
 	}
 }
 
