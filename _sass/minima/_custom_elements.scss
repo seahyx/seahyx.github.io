@@ -13,6 +13,11 @@ label.theme-display {
 
 	min-height: inherit;
 
+	// Give space to the menu button
+	@include media-query($on-palm) {
+		margin-right: 50px;
+	}
+
 	span {
 		@include display-flex;
 		

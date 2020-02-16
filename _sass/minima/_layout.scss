@@ -86,8 +86,8 @@
 
 	@include media-query($on-palm) {
 		position: absolute;
-		top: 10px;
-		right: $spacing-unit / 2;
+		top: $spacing-unit / 3;
+		right: $spacing-unit / 3;
 
 		@include display-flex(column, space-evenly, flex-end);
 
