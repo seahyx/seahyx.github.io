@@ -7,6 +7,12 @@ url: 'localhost:4000'
 
 google_site_verification: rcn0W-VkKUx63rQ2laiQ8rV2nbHcoeB8z0htPVaTmR4
 
+collections_dir: collections
+collections:
+  projects:
+    output: true
+    sort_by: order
+
 remote_theme: seahyx/jekyll-theme-pseudominima
 
 # Minima date format

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+	<div class="home">
+	
+		{{ content }}
+
+		{% for project in site.projects %}
+			<h2><a href='{{ project.github-link }}'>{{ project.title }}</a></h2>
+			<p>Description: {{ project.description | markdownify }}</p>
+			<p>{{ project.content | markdownify }}</p>
+		{% endfor %}
+	
+	</div>
+</div>
