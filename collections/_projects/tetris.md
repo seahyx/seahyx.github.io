@@ -1,8 +1,8 @@
 ---
 title: tetris
 github-link: https://github.com/seahyx/tetris
+demo-link: https://seahyx.github.io/tetris
 description: A mini tetris game made using HTML 5 and [Pixi.js](http://www.pixijs.com).
-order: 1
 ---
 
 ## tetris - PIXI.js

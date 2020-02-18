@@ -3,6 +3,4 @@ layout: projects
 title: Projects
 ---
 
-## Here is where my projects are supposed to be listed
-
-But the time is not yet right.
+All the things I've created over the years!

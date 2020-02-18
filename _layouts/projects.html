@@ -2,16 +2,32 @@
 layout: default
 ---
 
-<div class="wrapper">
-	<div class="home">
-	
-		{{ content }}
+<div class="home">
 
-		{% for project in site.projects %}
-			<h2><a href='{{ project.github-link }}'>{{ project.title }}</a></h2>
-			<p>Description: {{ project.description | markdownify }}</p>
-			<p>{{ project.content | markdownify }}</p>
-		{% endfor %}
+	<h1>{{ page.title }}</h1>
 	
-	</div>
+	{{ content }}
+
+	{% for project in site.projects %}
+		<div class='project-item' href='{{ project.url | relative_url }}'>
+			<div>
+
+				<h2><a href='{{ project.url | relative_url }}'>{{ project.title }}</a></h2>
+
+				<p><a href='{{ project.github-link | relative_url }}'>GitHub Repo ⭐</a></p>
+
+			</div>
+			<div>
+
+				<div>{{ project.description | markdownify}}</div>
+
+				{%- if project.demo-link -%}
+					<p><a href='{{ project.demo-link }}' target='_blank' itemprop='url'>Project Demo ▶️</a></p>
+				{%- endif -%}
+
+			</div>
+		</div>
+		
+	{% endfor %}
+
 </div>

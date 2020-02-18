@@ -160,6 +160,10 @@ $on-laptop:			800px !default;
 	}
 }
 
+@mixin linear-gradient($base-color: salmon, $angle: 160deg) {
+	background: linear-gradient($angle, $base-color, lighten($base-color, 20%));
+}
+
 // Import partials.
 @import
 	"minima/base",
