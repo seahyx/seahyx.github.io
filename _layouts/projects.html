@@ -9,17 +9,19 @@ layout: default
 	{{ content }}
 
 	{% for project in site.projects %}
-		<div class='project-item' href='{{ project.url | relative_url }}'>
-			<div>
+		<div class='projects-item' href='{{ project.url | relative_url }}'>
+			<div class='projects-desc'>
 
 				<h2><a href='{{ project.url | relative_url }}'>{{ project.title }}</a></h2>
 
-				<p><a href='{{ project.github-link | relative_url }}'>GitHub Repo ⭐</a></p>
+				<div>{{ project.description | markdownify}}</div>
 
 			</div>
-			<div>
+			<div class='projects-actions'>
 
-				<div>{{ project.description | markdownify}}</div>
+				<p><a href='{{ project.url | relative_url }}'>View Project 📜</a></p>
+
+				<p><a href='{{ project.github-link | relative_url }}'>GitHub Repo ⭐</a></p>
 
 				{%- if project.demo-link -%}
 					<p><a href='{{ project.demo-link }}' target='_blank' itemprop='url'>Project Demo ▶️</a></p>

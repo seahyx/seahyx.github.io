@@ -130,10 +130,17 @@
 /**
  * Projects page (list of projects)
  */
-div.project-item {
+div.projects-item {
 	padding: $spacing-unit;
+	margin-top: $spacing-unit;
 	border: 2px dotted var(--brand-color);
 	border-radius: $spacing-unit / 3;
+
+	@include display-flex(row, space-between);
+
+	@include media-query($on-palm) {
+		@include display-flex(column, flex-start);
+	}
 
 	@include transitions-all;
 
@@ -142,19 +149,19 @@ div.project-item {
 		border-style: solid;
 	}
 
-	& + div.project-item {
-		margin-top: $spacing-unit / 3;
-	}
-
 	& > div {
-		@include display-flex(row, space-between, baseline);
 
-		a {
-			white-space: nowrap;
+		&.projects-desc {
+			margin-right: $spacing-unit;
+
+			@include media-query($on-palm) {
+				margin-right: 0;
+			}
+			align-self: flex-start;
 		}
 
-		:first-child {
-			margin-right: $spacing-unit;
+		&.projects-actions a {
+			white-space: nowrap;
 		}
 	}
 }
