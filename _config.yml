@@ -77,5 +77,3 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-remote-theme
-
-theme: jekyll-theme-cayman
