@@ -4,10 +4,6 @@
 
 ## Oh? You're approaching my [site](https://seahyx.github.io/)? Instead of running away, *you're coming [right here](https://seahyx.github.io/)*?
 
-> I can't star the shit out of this repo without getting closer.
+> I can't star the crap out of this repo without getting closer.
 
-Yes it's my website. Made possible by my sheer will, and I guess a bit of [Jekyll](https://jekyllrb.com) and [Github Pages](https://pages.github.com).
-
-Here are some links *just* in case you missed it:
-
-<https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/><https://seahyx.github.io/>
+Yes it's my website. Made possible by sheer will, and I guess a bit of [Jekyll](https://jekyllrb.com) and [Github Pages](https://pages.github.com).
