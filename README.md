@@ -6,4 +6,4 @@
 
 > I can't star the crap out of this repo without getting closer.
 
-Yes it's my website. Made possible by sheer will, and I guess a bit of [Jekyll](https://jekyllrb.com) and [Github Pages](https://pages.github.com).
+Yes it's my website. Made possible by sheer hecking will, and I guess a bit of [Jekyll](https://jekyllrb.com) and [Github Pages](https://pages.github.com).
