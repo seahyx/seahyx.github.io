@@ -19,8 +19,10 @@ minima:
   social_links:
     github: seahyx
 
+# My theme
+remote_theme: seahyx/this-theme
+
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
