@@ -1,10 +1,10 @@
-title: Seah Ying Xiang | seahyx.github.io
+title: seahyx's website
 author:
   name: Seah Ying Xiang
   email: seahyx@gmail.com
 github_username: seahyx
 github: https://github.com/seahyx/seahyx.github.io
-description: HTML, CSS, JS, TS, Flask, Flutter, Java, Python, C++, C#, Lua, Dart, and (My)SQL. Hopefully of use when aliens invade. 👽
+description: Software developer. Hopefully of use when aliens invade. 👽
 baseurl: '/'
 url: 'localhost:4000'
 
