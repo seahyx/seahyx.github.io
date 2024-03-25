@@ -27,6 +27,7 @@ url: "https://seahyx.github.io" # the base hostname & protocol for your site, e.
 github_username: seahyx
 
 # Build settings
+source: ./src
 theme: minima
 plugins:
     - jekyll-feed
