@@ -1,10 +1,18 @@
-.home {
-  border: 1px solid black;
-  grid: auto-flow dense;
+.flex {
+  display: flex;
 }
 
-.flipbox {
-  background-color: aqua;
-  width: 100px;
-  height: 100px;
+.wrapper-wide {
+  max-width: 1600px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .box {
+  width: 250px;
+  border: 2px solid black;
 }

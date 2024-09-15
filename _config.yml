@@ -21,7 +21,7 @@
 title: Seah Ying Xiang
 email: seahyx@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Self-taught software developer with a keen interest in web design, game development, and extended reality (AR/VR/MR).
+    Software developer with a keen interest in web design, game development, and extended reality (AR/VR/MR).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://seahyx.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: seahyx
