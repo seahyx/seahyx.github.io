@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Chomsky;
+  src: url(../fonts/Chomsky.otf);
+}
+
+@font-face {
+  font-family: Vollkorn;
+  src: url(../fonts/Vollkorn-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-VariableFont.ttf);
+}

@@ -1,1 +1,19 @@
 // Placeholder to allow overriding predefined variables smoothly.
+@font-face {
+	font-family: Chomsky;
+	src: url(../fonts/Chomsky.otf);
+}
+@font-face {
+	font-family: Vollkorn;
+	src: url(../fonts/Vollkorn-VariableFont_wght.ttf);
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url(../fonts/OpenSans-VariableFont.ttf);
+}
+
+$base-font-family: Vollkorn, Roboto, Helvetica, Arial, sans-serif;
+$base-font-weight: 600;
+$base-line-height: 1.2;
+
+$spacing-unit: 32px;
