@@ -8,12 +8,15 @@
 	src: url(../fonts/Vollkorn-VariableFont_wght.ttf);
 }
 @font-face {
-	font-family: "Open Sans";
-	src: url(../fonts/OpenSans-VariableFont.ttf);
+	font-family: Inter;
+	src: url(../fonts/Inter-VariableFont.ttf);
 }
 
-$base-font-family: Vollkorn, Roboto, Helvetica, Arial, sans-serif;
+$special-font-family: Chomsky, serif;
+$base-font-family: Vollkorn, serif;
+$sans-font-family: Inter, Roboto, Helvetica, Arial, sans-serif;
 $base-font-weight: 600;
 $base-line-height: 1.2;
+$base-font-size: 16px;
 
 $spacing-unit: 32px;

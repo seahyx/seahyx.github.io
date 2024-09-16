@@ -1,6 +1,6 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
-$title-font-size: 5.5rem;
+$title-font-size: 7rem;
 
 .flex {
 	display: flex;
@@ -24,6 +24,7 @@ $title-font-size: 5.5rem;
 
 	.box {
 		width: 150px;
+		min-width: 6rem;
 		height: 50px;
 		padding: $spacing-unit / 2;
 		border: 2px solid black;
@@ -32,21 +33,22 @@ $title-font-size: 5.5rem;
 	}
 
 	h1 {
-		font-family: Chomsky;
+		font-family: $special-font-family;
 		font-size: $title-font-size;
 		font-weight: normal;
 		text-align: center;
 		line-height: $title-font-size;
-		text-wrap: nowrap;
+		white-space: nowrap;
 		margin-bottom: 0;
 	}
 
 	.box2 {
 		h2 {
-			font-family: "Open Sans";
-			font-weight: 800;
+			font-family: $sans-font-family;
+			font-weight: 900;
 			font-size: 1.4rem;
 			line-height: 2;
+			white-space: nowrap;
 			margin-bottom: 0;
 		}
 		div {
@@ -67,6 +69,7 @@ $title-font-size: 5.5rem;
 	width: 100%;
 	justify-content: space-between;
 	align-items: baseline;
+	box-sizing: border-box;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	padding: $spacing-unit / 8;
@@ -77,12 +80,92 @@ $title-font-size: 5.5rem;
 	}
 }
 
-.main-content {
-	display: flex;
-}
-
-.about {
+.headlines {
 	h1 {
 		font-size: 4rem;
+	}
+}
+
+.main-content {
+	display: flex;
+	gap: $spacing-unit;
+}
+
+.sections {
+	display: flex;
+	flex-direction: column;
+	gap: $spacing-unit;
+
+	.summary {
+		display: flex;
+		gap: $spacing-unit;
+		justify-content: space-between;
+
+		.section-1 {
+			flex: 2;
+			font-size: 1.2rem;
+			h2 {
+				font-size: 2rem;
+				text-wrap: balance;
+			}
+			h3 {
+				font-family: $sans-font-family;
+				font-weight: 900;
+			}
+			p {
+				text-align: justify;
+				text-wrap: balance;
+				text-indent: 2.2rem;
+			}
+		}
+
+		.portrait {
+			flex: 1.6;
+			img {
+				margin-bottom: $spacing-unit / 2;
+			}
+			figcaption {
+				font-style: italic;
+				text-align: center;
+				text-wrap: pretty;
+				font-size: 1.1rem;
+				span.quote {
+					font-weight: 800;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+
+	.section-project-title {
+		width: 100%;
+		text-align: center;
+		font-size: 5rem;
+	}
+}
+
+.sidebar {
+	flex: 0 0 300px;
+	h2 {
+		font-size: 2rem;
+		margin-bottom: $spacing-unit / 4;
+	}
+	.topline {
+		box-sizing: border-box;
+		border-top: 2px dotted black;
+	}
+	.line {
+		box-sizing: border-box;
+		border-top: 1px solid black;
+	}
+	a {
+		display: flex;
+		width: 100%;
+		height: 2.5rem;
+		align-items: center;
+		transition: all 0.2s ease-out;
+	}
+	a:hover {
+		background-color: #00000025;
 	}
 }
