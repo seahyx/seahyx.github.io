@@ -168,6 +168,8 @@ $sidebar-size: 300px;
 
 .sidebar {
 	flex: 0 0 $sidebar-size;
+	position: sticky;
+	top: 0;
 	h2 {
 		font-size: 2rem;
 		margin-bottom: $spacing-unit / 4;
